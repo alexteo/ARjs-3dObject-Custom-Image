@@ -59,15 +59,21 @@
                     smoothTolerance='0.1'
                     smoothThreshold='5'
                 >
-                <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->                       
-                    <a-entity
+                <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
+                    <a-entity animation='property: rotation; to: 0 360 0; dur: 9000; loop: true; easing: linear;'>
+                        <a-box position='0 0.5 0' 
+                            scale='10 10 10'
+                            material='color:pink; opacity: 0.7'> 
+                        </a-box> 
+                    </a-entity>           
+                    <!-- <a-entity
                         id='drone_scene'
                         gltf-model="#drone"
                         scale='0.1 0.1 0.1'
                         shadow="cast:false; receive:false"
                         animation-mixer
                     >
-                    </a-entity>
+                    </a-entity> -->
                 </a-nft>
             <!-- static camera that moves according to the device movemenents -->
             <a-entity camera></a-entity>
